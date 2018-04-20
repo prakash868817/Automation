@@ -1,33 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="3" failed="0" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2167" started-at="2018-04-18T10:26:49Z" finished-at="2018-04-18T10:26:52Z">
+  <suite name="Suite" duration-ms="36414" started-at="2018-04-19T07:22:39Z" finished-at="2018-04-19T07:23:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2167" started-at="2018-04-18T10:26:49Z" finished-at="2018-04-18T10:26:52Z">
-      <class name="robimyplex.Navigations">
-        <test-method status="FAIL" signature="Launch()[pri:0, instance:robimyplex.Navigations@a49e885]" name="Launch" is-config="true" duration-ms="0" started-at="2018-04-18T15:56:49Z" finished-at="2018-04-18T15:56:49Z">
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+    <test name="Test" duration-ms="36414" started-at="2018-04-19T07:22:39Z" finished-at="2018-04-19T07:23:16Z">
+      <class name="robimyplex.Search">
+        <test-method status="PASS" signature="launch()[pri:0, instance:robimyplex.Search@58ceff1]" name="launch" is-config="true" duration-ms="36372" started-at="2018-04-19T12:52:39Z" finished-at="2018-04-19T12:53:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method status="FAIL" signature="launch()[pri:0, instance:robimyplex.VideoSearch@7c30a502]" name="launch" is-config="true" duration-ms="0" started-at="2018-04-19T12:53:16Z" finished-at="2018-04-19T12:53:16Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+              <![CDATA[A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'SPrakash-PC', ip: '192.168.60.238', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
-Driver info: driver.version: AndroidDriver]]>
+System info: host: 'SPrakash-PC', ip: '192.168.60.238', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
+Driver info: io.appium.java_client.android.AndroidDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
-System info: host: 'SPrakash-PC', ip: '192.168.60.238', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
-Driver info: driver.version: AndroidDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+System info: host: 'SPrakash-PC', ip: '192.168.60.238', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
+Driver info: io.appium.java_client.android.AndroidDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:109)
 	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:39)
-	at robimyplex.Navigations.Launch(Navigations.java:78)
+	at robimyplex.VideoSearch.launch(VideoSearch.java:73)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -47,52 +59,37 @@ Driver info: driver.version: AndroidDriver
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
 	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused: connect
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	... 29 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
-	... 42 more
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Launch -->
-        <test-method status="SKIP" signature="login()[pri:0, instance:robimyplex.Navigations@a49e885]" name="login" duration-ms="0" started-at="2018-04-18T15:56:52Z" finished-at="2018-04-18T15:56:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="SKIP" signature="Report()[pri:0, instance:robimyplex.Navigations@a49e885]" name="Report" is-config="true" duration-ms="0" started-at="2018-04-18T15:56:52Z" finished-at="2018-04-18T15:56:52Z">
+        </test-method> <!-- launch -->
+        <test-method status="SKIP" signature="Report()[pri:0, instance:robimyplex.Search@58ceff1]" name="Report" is-config="true" duration-ms="0" started-at="2018-04-19T12:53:16Z" finished-at="2018-04-19T12:53:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Report -->
-      </class> <!-- robimyplex.Navigations -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:robimyplex.Search@58ceff1]" name="login" duration-ms="0" started-at="2018-04-19T12:53:16Z" finished-at="2018-04-19T12:53:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="Report()[pri:0, instance:robimyplex.VideoSearch@7c30a502]" name="Report" is-config="true" duration-ms="0" started-at="2018-04-19T12:53:16Z" finished-at="2018-04-19T12:53:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Report -->
+        <test-method status="SKIP" signature="search()[pri:1, instance:robimyplex.Search@58ceff1]" name="search" duration-ms="0" started-at="2018-04-19T12:53:16Z" finished-at="2018-04-19T12:53:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+      </class> <!-- robimyplex.Search -->
+      <class name="robimyplex.VideoSearch">
+        <test-method status="SKIP" signature="search()[pri:1, instance:robimyplex.VideoSearch@7c30a502]" name="search" duration-ms="0" started-at="2018-04-19T12:53:16Z" finished-at="2018-04-19T12:53:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+      </class> <!-- robimyplex.VideoSearch -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
