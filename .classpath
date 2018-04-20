@@ -36,5 +36,6 @@
 	<classpathentry kind="lib" path="D:/softwares/poi-ooxml-3.11.jar"/>
 	<classpathentry kind="lib" path="D:/softwares/Mysoftwares/Seleniumstuff/jxl-2.6.12.jar"/>
 	<classpathentry kind="lib" path="D:/softwares/Mysoftwares/Seleniumstuff/pdfbox-app-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
